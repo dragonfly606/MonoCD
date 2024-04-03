@@ -1,7 +1,7 @@
 # MonoCD: Monocular 3D Object Detection with Complementary Depths
 This repository includes an official implementation of the paper 'MonoCD: Monocular 3D Object Detection with Complementary Depths' based on the excellent work [MonoFlex](https://github.com/zhangyp15/MonoFlex). In this work, we first point out the coupling phenomenon that the existing multi-depth predictions have the tendency of predicted depths to consistently overestimate or underestimate the true depth values, which limits the accuracy of combined depth. We propose to increase the complementarity of depths through two novel designs to alleviate this problem.
 
-![](.\figures\core.png)
+![](figures/core.png)
 
 ## Installation
 
@@ -49,7 +49,7 @@ The road planes for Horizon Heatmap training could be downloaded from [HERE](htt
 
 ## Get Started
 
-#### Train
+### Train
 
 Training with one GPU.
 
@@ -57,7 +57,7 @@ Training with one GPU.
 CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --batch_size 8 --config runs/monocd.yaml --output output/exp
 ```
 
-#### Test
+### Test
 
 The model will be evaluated periodically during training and you can also evaluate an already trained checkpoint with
 
@@ -65,7 +65,7 @@ The model will be evaluated periodically during training and you can also evalua
 CUDA_VISIBLE_DEVICES=0 python tools/plain_train_net.py --config runs/monocd.yaml --ckpt YOUR_CKPT  --eval
 ```
 
-#### Model and log
+### Model and log
 
 We provide the trained model on KITTI and corresponding logs.
 
