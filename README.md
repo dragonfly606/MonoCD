@@ -1,7 +1,7 @@
 # MonoCD: Monocular 3D Object Detection with Complementary Depths
 This repository includes an official implementation of the paper 'MonoCD: Monocular 3D Object Detection with Complementary Depths' based on the excellent work [MonoFlex](https://github.com/zhangyp15/MonoFlex). In this work, we first point out the coupling phenomenon that the existing multi-depth predictions have the tendency of predicted depths to consistently overestimate or underestimate the true depth values, which limits the accuracy of combined depth. We propose to increase the complementarity of depths through two novel designs to alleviate this problem.
 
-![](.\figures\core.png)
+![](figures/core.png)
 
 ## Installation
 
