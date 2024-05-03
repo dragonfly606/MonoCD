@@ -405,6 +405,10 @@ class Loss_Computation():
 	def __call__(self, predictions, targets):
 		targets_heatmap, targets_variables = self.prepare_targets(targets)
 
+		if targets_variables['reg_mask'].sum() == 0:
+			# no objects in this batch
+			return {'all_loss': torch.tensor(0.0, requires_grad=True)}, {'empty_loss': 0.0}
+
 		pred_heatmap = predictions['cls']
 		pred_targets, preds, reg_nums, weights = self.prepare_predictions(targets_variables, predictions)
 
