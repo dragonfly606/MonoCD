@@ -94,6 +94,7 @@ If you find our work useful in your research, please consider giving us a star a
   title={MonoCD: Monocular 3D Object Detection with Complementary Depths},
   author={Yan, Longfei and Yan, Pei and Xiong, Shengzhou and Xiang, Xuanyu and Tan, Yihua},
   booktitle={CVPR},
+  pages={10248--10257},
   year={2024}
 }
 ```
