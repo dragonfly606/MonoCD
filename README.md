@@ -7,23 +7,20 @@ This repository includes an official implementation of the paper [MonoCD: Monocu
 
 ```bash
 git clone https://github.com/dragonfly606/MonoCD.git
-
 cd MonoCD
 
 conda create -n monocd python=3.7
-
 conda activate monocd
 
-conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
-
+# Install PyTorch that matches your local CUDA version. We adopt torch 1.4.0+cu101
+conda install pytorch torchvision cudatoolkit
 pip install -r requirements.txt
 
 cd model/backbone/DCNv2
-
 sh make.sh
+# If the DCNv2 compilation fails, you can replace it with the version from https://github.com/lbin/DCNv2 that matches your PyTorch version, and then try recompiling.
 
 cd ../../..
-
 python setup.py develop
 ```
 

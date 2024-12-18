@@ -12,3 +12,4 @@ fvcore
 opencv-python
 numba
 inplace_abn
+scikit-learn
