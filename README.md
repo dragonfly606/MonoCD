@@ -1,4 +1,14 @@
 # MonoCD: Monocular 3D Object Detection with Complementary Depths
+
+<h5 align="center">
+
+*Longfei Yan, Pei Yan, Shengzhou Xiong, Xuanyu Xiang, Yihua Tan*
+
+[![arXiv](https://img.shields.io/badge/arXiv-2404.03181-b31b1b.svg)](https://arxiv.org/abs/2404.03181)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/dragonfly606/MonoCD/blob/main/LICENSE)
+
+</h5>
+
 This repository includes an official implementation of the paper [MonoCD: Monocular 3D Object Detection with Complementary Depths](https://arxiv.org/abs/2404.03181) based on the excellent work [MonoFlex](https://github.com/zhangyp15/MonoFlex). In this work, we first point out the coupling phenomenon that the existing multi-depth predictions have the tendency of predicted depths to consistently overestimate or underestimate the true depth values, which limits the accuracy of combined depth. We propose to increase the complementarity of depths to alleviate this problem.
 
 ![](figures/core.png)
@@ -81,6 +91,7 @@ If you find our work useful in your research, please consider giving us a star a
   title={MonoCD: Monocular 3D Object Detection with Complementary Depths},
   author={Yan, Longfei and Yan, Pei and Xiong, Shengzhou and Xiang, Xuanyu and Tan, Yihua},
   booktitle={CVPR},
+  pages={10248--10257},
   year={2024}
 }
 ```
