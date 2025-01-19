@@ -144,7 +144,7 @@ def show_image_with_boxes_test(image, output, target, visualize_preds):
 	plt.title('2D and 3D results')
 	plt.show()
 
-def show_all_image_with_boxes(image, outputs, target, visualize_preds, vis_scores, depth_methods):
+def show_all_image_with_boxes(image, outputs, target, visualize_preds, vis_scores, depth_methods, predict_folder=".", idx=0):
 	image = image.numpy().astype(np.uint8)
 	stack_imgs = []
 
@@ -253,6 +253,10 @@ def show_all_image_with_boxes(image, outputs, target, visualize_preds, vis_score
 		plt.axis('off')
 
 	plt.show()
+
+	# Save the image to disk
+	output_path = os.path.join(predict_folder, f"{idx}.png")
+	plt.savefig(output_path)
 
 # heatmap and 3D detections
 def show_image_with_boxes(image, output, target, visualize_preds, vis_scores=None, depth_method=None):

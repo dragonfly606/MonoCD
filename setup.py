@@ -22,6 +22,11 @@ def get_extensions():
     source_cpu = glob.glob(os.path.join(extensions_dir, "cpu", "*.cpp"))
     source_cuda = glob.glob(os.path.join(extensions_dir, "cuda", "*.cu"))
 
+    # Print out the source files found
+    print(f"Main .cpp files: {main_file}")
+    print(f"CPU .cpp files: {source_cpu}")
+    print(f"CUDA .cu files: {source_cuda}")
+
     sources = main_file + source_cpu
     extension = CppExtension
 

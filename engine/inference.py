@@ -57,7 +57,7 @@ def compute_on_dataset(model, data_loader, device, predict_folder, timer=None, v
                     #     show_image_with_boxes(vis_target.get_field('ori_img'), output, vis_target,
                     #                         visualize_preds, vis_scores=eval_utils['vis_scores'], depth_method=depth_method)
                 show_all_image_with_boxes(vis_target.get_field('ori_img'), output_list, vis_target, visualize_preds_list, vis_scores_list,
-                                          eval_depth_methods)
+                                          eval_depth_methods, predict_folder, image_ids)
 
             else:
 

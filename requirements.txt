@@ -6,8 +6,10 @@ scikit-image
 matplotlib
 yacs
 pyyaml
+pillow
 fire
 pycocotools
+pynvml
 fvcore
 opencv-python
 numba

@@ -22,9 +22,12 @@ cd MonoCD
 conda create -n monocd python=3.7
 conda activate monocd
 
-# Install PyTorch that matches your local CUDA version. We adopt torch 1.4.0+cu101
-conda install pytorch torchvision cudatoolkit
+# Install PyTorch that matches your local CUDA version. We adopt torch 1.7.0+cu11
+conda install pytorch==1.7.0 torchvision==0.8.0 cudatoolkit=11.0 -c pytorch
 pip install -r requirements.txt
+
+# check the pytorch, cuda versions
+python check_cuda.py 
 
 cd model/backbone/DCNv2
 sh make.sh
@@ -43,7 +46,7 @@ Please download [KITTI dataset](http://www.cvlibs.net/datasets/kitti/eval_object
   |training/
     |calib/
     |image_2/
-    |label/
+    |label_2/
     |planes/
     |ImageSets/
   |testing/
