@@ -22,13 +22,16 @@ cd MonoCD
 conda create -n monocd python=3.7
 conda activate monocd
 
-# Install PyTorch that matches your local CUDA version. We adopt torch 1.4.0+cu101
+# Install PyTorch that matches your local CUDA version.
+# We succeeded in both torch1.4.0+cu101 and torch1.13.0+cu117
 conda install pytorch torchvision cudatoolkit
 pip install -r requirements.txt
 
 cd model/backbone/DCNv2
 sh make.sh
-# If the DCNv2 compilation fails, you can replace it with the version from https://github.com/lbin/DCNv2 that matches your PyTorch version, and then try recompiling.
+# If the DCNv2 compilation fails, you can replace it with the version from
+# https://github.com/lucasjinreal/DCNv2_latest or
+# https://github.com/lbin/DCNv2
 
 cd ../../..
 python setup.py develop
