@@ -23,7 +23,9 @@ conda create -n monocd python=3.7
 conda activate monocd
 
 # Install PyTorch that matches your local CUDA version.
-# We succeeded in both torch1.4.0+cu101 and torch1.13.0+cu117
+# We succeeded in both
+# torch1.4.0+cu101 (recommended for best reproduction accuracy)
+# and torch1.13.0+cu117 (there may be a performance loss if inferring directly on the previous model)
 conda install pytorch torchvision cudatoolkit
 pip install -r requirements.txt
 
