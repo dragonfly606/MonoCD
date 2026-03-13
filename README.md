@@ -13,6 +13,11 @@ This repository includes an official implementation of the paper [MonoCD: Monocu
 
 ![](figures/core.png)
 
+## News
+
+* **[2026.03]** 🔥 The upgraded version **MonoCD-E** is coming soon! We enhance the proposed complementary depth branch to provide more accurate and stable estimates. Also, it is compatible with the latest DETR detection architecture!
+* **[2024.04]** 🎉 **MonoCD** has been accepted by **CVPR 2024**! The code has been released.
+
 ## Installation
 
 ```bash
